@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+            <img src="/img/logo2.png" alt="">
+        </div>
+        <ul class="list-items">
+            <li class="item"><a class="current" href="index.html"><img src="/navbar/train logo.png" alt=""> Train
+                    Tickets</a></li>
+            <li class="item"><a href="index1.html"><img src="/navbar/plane-ticket2.png" alt=""> Flight Tickets</a></li>
+            <li class="item"><a href="pnr.html"><img src="/navbar/train-ticket2.png" alt="">PNR Details</a></li>
+            <li class="item"><a href="#Contact-Us"><img src="/navbar/support.png" alt=""> Contact Us</a></li>
+        </ul>
+        <div id="settings">
+            <img id="settingslogo" src="/img/settingslogo.png" alt="">
+        </div>
+
+    </nav>
+    <section id="container">
+        <h1><img src="/img/train-station.png" alt="">Search Your Train</h1>
+        <form action="">
+            <div class="container-element">
+                <div class="box">From <input type="text" placeholder="From"></div>
+                <div class="box">To <input type="text" placeholder="To"></div>
+                <div class="box">Date <input type="date"></div>
+                <div>
+                    <input type="submit" id="trainSearchButton" onclick="booked()" class="submit btn" name="search" id="" value="SEARCH">
+                </div>
+            </div>
+        </form>
+    </section>
+    <section id="services">
+        <h2>Services We Offer</h2>
+        <div class="service-box">
+            <div class="items" style="background-color: aqua;"><img src="/Services/cattering.png" alt="">Order Food While Traveling 
+                </div>
+                <div class="items" style="background-color: aquamarine;"><img src="/Services/train-ticket.png" alt="">Hassle
+                    Free Cancellations</div>
+                    <div class="items" style="background-color: beige;"><img src="/Services/customer-service.png" alt="">24*7
+                        Customer-Service</div>
+                        <div class="items" style="background-color: rgb(246, 203, 187);"><img src="/Services/refund.png"
+                            alt="">Instant Refunds</div>
+                        </div>
+                    </section>
+                    
+                    <footer id="Contact-Us">
+                        <h1>Contact Us</h1>
+                        <div class="contact-details">
+                            <form action="">
+                <div><label for="name">
+                    Name:<input type="text" name="name" placeholder="Enter Your Name Here">
+                </label>
+            </div>
+                <div><label for="email">
+                    Email:<input type="email" name="email" placeholder="Enter Your Email Here">
+                    </label>
+                </div>
+                    <div><label for="comment">
+                        <div>Message:</div><textarea>
+                            
+                        </textarea>
+                    </label>
+                </div>
+                <div class="div-contact-btn">
+                    <input type="submit" onclick="messageReceived()" class="contact-btn" value="Submit">
+                </div>
+            </form>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
